@@ -10,5 +10,17 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    
+    let Src = document.getElementById('source');
+    /* definir variable qui ira cherche l'element source ds document */
+    let Img = Src.getAttribute('data-image');
+    /* definir variable qui recuperera la valeur de l'attribut de la balise */
+
+    document.getElementById('target').innerHTML = "<img src='"+Img+"' >";
+    /* change la blise en balise image + l'attribut  */
+
+    source.remove(); 
+    /* remove la balise source */
+    
+    
 })();
