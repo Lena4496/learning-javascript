@@ -10,5 +10,27 @@
 // You will have time to focus on it later.
 
 (() => {
+    class Person{
+        /* init class avec Name */
+        constructor(lastname, firstname){
+            /* constructor contiendra : ... propriété */
+            this.lastname = lastname;
+            this.firstname = firstname;
+        }
+
+        Hey(){
+            /* function ( methode de class) hello sans para */
+            return "Hey," + this.lastname + " " + this.firstname ;
+            /* renvoit juste string + propriété */
+        }
+    }
+    document.getElementById("run").addEventListener("click",() =>{
+        /* au click execute function qui contient */
+        let human = new Person ("Chapeaubas", "Henry")
+        /* declarer variable humain avec instance => nom */
+        console.log(human.Hey());
+        /* applique la methode hey donc reurn le nom etc d ehumain  */
+
+    });
     // your code here
 })();

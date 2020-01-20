@@ -10,5 +10,9 @@
 // You will have time to focus on it later.
 
 (() => {
+    document.querySelector(".target").textContent = "owned"
+    /* ds document va chercher la class " . !!! impôrtant le ." */
+    /* querySelector = prend tout même classe, tag etc*/
+
     // your code here
 })();

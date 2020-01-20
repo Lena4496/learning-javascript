@@ -10,5 +10,14 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let targets = Array.from(document.getElementsByClassName("target"));
+    /*declaration variable qui sera et creera un array à partir des "p" ici class target */
+    targets.forEach(target => {
+        /* poour chaque target (element) de tableau targets exeute la function */
+        target.textContent = "jtainikey";
+        /* change element target en  */
+        
+    });
+        
+    
 })();

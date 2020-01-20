@@ -10,11 +10,24 @@
 // You will have time to focus on it later.
 
 (() => {
-    class Cat {
-        constructor(name, age) {
+    class Cat { 
+        constructor(name, age, color) {
             this.name = name;
             this.age = age;
+            this.color = color;
+
         }
     }
+
+    document.getElementById("run").addEventListener("click", ()=> {
+        // au click execute function qui contient
+        const skitty = new Cat ("Skitty", 9, "Grey")
+        // creation var qui sera une instance de cat new + nom class
+        const pixel = new Cat ("Pixel", 6, "Black")
+        console.log(skitty, pixel)
+
+
+    });
+
     // your code here
 })();
