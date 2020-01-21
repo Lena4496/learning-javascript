@@ -19,7 +19,7 @@
         }
     }
 
-    document.getElementById("run").addEventListener("click", ()=> {
+    document.getElementById("run").addEventListener("click", () => {
         // au click execute function qui contient
         const skitty = new Cat ("Skitty", 9, "Grey")
         // creation var qui sera une instance de cat new + nom class

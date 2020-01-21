@@ -10,5 +10,14 @@
 // You will have time to focus on it later.
 
 (() => {
+    document.getElementById("run").addEventListener("click", async function (){
+        /* au click  fait appel à la fnoction async => async function () */
+        let articles = await window.lib.getPosts();
+        /* definir une vaiable pour la console log, la var contient ce qu'on souhaite recup
+        ds le lib, await = attend */
+        console.log(articles)
+
+
+    });
     // your code here
 })();

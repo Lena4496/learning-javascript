@@ -10,5 +10,15 @@
 // You will have time to focus on it later.
 
 (() => {
+    document.getElementById("run").addEventListener("click", () => {
+        window.lib.getPosts((error, arrayArticles) =>{
+            /* window lib machin est une function declarée précedemment je ne sais ou ; la premier ( c'ets para de la function)
+            etla deuxieme est le call back est un paramatre le la fonction et il contient des arguments */
+            /* execute fonction avec dedans console log ici  */
+
+            console.log(arrayArticles);
+
+        })
+    });
     // your code here
 })();

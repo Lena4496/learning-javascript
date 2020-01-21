@@ -10,5 +10,21 @@
 // You will have time to focus on it later.
 
 (() => {
+    document.getElementById("run").addEventListener("click", () =>{
+        window.lib.getPersons((error, arrayPerson) =>{
+            /* appelle rfuncton getPerson , definir les para ici y en a pas +/
+            definir le call back  */
+            if (error){
+                /* si y a error affichir console.error */
+                console.error(error);
+            }
+            else{ 
+                console.log(arrayPerson);
+                /* affiche para call back  */
+            }
+
+        })
+
+    });
     // your code here
 })();
