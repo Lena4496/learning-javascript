@@ -16,6 +16,7 @@
         /* definir une vaiable pour la console log, la var contient ce qu'on souhaite recup
         ds le lib, await = attend */
         console.log(articles)
+        /* afficher la var article qui a attendu  */
 
 
     });

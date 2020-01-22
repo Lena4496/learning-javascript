@@ -10,5 +10,11 @@
 // You will have time to focus on it later.
 
 (() => {
+    document.getElementById("slider").addEventListener("input", () => {
+        
+        document.getElementById("target").textContent = "+"+document.getElementById("slider").value 
+
+    });
+    
     // your code here
 })();

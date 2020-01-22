@@ -10,5 +10,14 @@
 // You will have time to focus on it later.
 
 (() => {
+    document.getElementById("run").addEventListener("click", async () => {
+    
+    let articles = await window.lib.getPosts();
+    /* definir variable qui attendra d'appeller windowlib get posts */
+    articles.forEach(element => {
+        
+    });
+
+    });
     // your code here
 })();
