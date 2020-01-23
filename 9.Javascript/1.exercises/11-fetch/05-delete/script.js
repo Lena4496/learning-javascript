@@ -1,14 +1,10 @@
-/* becode/javascript
- *
- * /11-fetch/05-delete/script.js - 11.5: supprimer un élément
- *
- * coded by leny@BeCode
- * started at 12/05/2019
- */
 
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
 
 (() => {
-    // your code here
+    // get element b id run add event click
+    // recup id ds formu :> cree variable
+    // supp le perso de l'id recup ds api
+    // console log result
+    // async? qd t'as reup l'id supprime le 
+    
 })();

@@ -11,10 +11,14 @@
 
 (() => {
     document.getElementById("slider").addEventListener("input", () => {
+     /*va chercher slide et à l'input (click gardé) */
         
         document.getElementById("target").textContent = "+"+document.getElementById("slider").value 
-
+        /* va cherche target et change le text par = "+" pour rajouter le plus, +  */
     });
+    /* facon de marco - declare une variable où tu met l'id target pareil pour l'id slider
+    et ensuite declare une variable qui en fait sera une fonction quis 'enclenche direct
+    exemple  : let valueChanger = () =>{ .. } et du coup pas besoin d'appeller la fonction*/
     
     // your code here
 })();
