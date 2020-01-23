@@ -1,15 +1,6 @@
 {
   "heroes": [
     {
-      "id": 1,
-      "name": "Cyclops",
-      "alterEgo": "Scott Summers",
-      "abilities": [
-        "Optic force blasts",
-        "Master tactician"
-      ]
-    },
-    {
       "id": 2,
       "name": "Marvel Girl",
       "alterEgo": "Jean Grey",
@@ -52,6 +43,12 @@
       "alterego": "prout",
       "power": "chier",
       "id": 6
+    },
+    {
+      "name": "z",
+      "alterego": "z",
+      "power": "c",
+      "id": 7
     }
   ]
 }
