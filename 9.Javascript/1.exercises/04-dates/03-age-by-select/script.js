@@ -9,8 +9,14 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(() => {
     document.getElementById("run").addEventListener("click",() =>{
-        document.getElementById("dob-day", "dob-month", "dob-year") //ca sfait ap
-        
-})();
+
+        // declarer variable année + date ajd 
+        // + reusltat donc age :> l'année de la date d'ajd - les années du type
+        let year = document.getElementById("dob-year").value;
+        let date = new Date ();
+        let age = date.getFullYear() - year; 
+
+    alert (age);
+
+    });

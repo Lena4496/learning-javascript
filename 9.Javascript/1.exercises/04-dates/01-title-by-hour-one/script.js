@@ -13,17 +13,16 @@
     // to change the content of a tag: // ha nope
     let date = new Date();
     let hours = date.getHours();
-    let minutes = date.getMinutes();
-    let time = minutes + hours;
-
-    console.log(time);
+    // let hour = (new Date()).getHours();
+    
+    console.log(hours);
     
 
-    if (time < 130){
+    if (hours < 18){
         document.getElementById("target").innerHTML = "Bonjour";
     }
     
-    else (time > 1530)
+    else (hours > 18)
     {
         document.getElementById("target").innerHtml = "Bonsoir";
     }

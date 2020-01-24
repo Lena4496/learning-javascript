@@ -9,13 +9,8 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(() => {
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-    let hours= getHours();
-    let minutes= getMinutes();
+    let date = new Date();
     
     
     document.getElementById("target").innerHTML = date;
     
-    // your code here
-})();

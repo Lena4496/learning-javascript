@@ -8,7 +8,20 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+let pass= document.getElementById("pass-one");
+let confirm= document.getElementById("pass-two");
 
-(() => {
-    // your code here
-})();
+document.getElementById("run").addEventListener("click", () => {
+    if(pass.value == confirm.value){
+        alert("yoloswagsisitavu")
+    }
+    else{
+        pass.setAttribute("class", "error");
+        confirm.setAttribute("class", "error");
+
+        alert("y a un soucis")
+    }
+    
+
+
+});

@@ -9,16 +9,19 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(() => {
-    let date = new Date();
-    let hours = date.getHours ()
-    let minutes = date.getMinutes();
+    /*let date = new Date();
+    let hours = date.getHours ();
+    let min = date.getMinutes();*/
 
-    if (hours<1430){
+    let hour = (new Date()).getHours();
+    let min = (new Date()).getMinutes();
+
+    if (hour < 17 || min < 30 ){
         document.getElementById("target").innerHTML = "Bonjour";
-    }else (hours>1730)
-    {
-        document.getElementById("target").innerHtml = "Bonsoir" ;
     }
-
-})();
+    else
+    {
+        document.getElementById("target").innerHTML = "Bonsoir";
+    }
+    /**WAW */
+  

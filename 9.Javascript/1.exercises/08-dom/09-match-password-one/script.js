@@ -9,6 +9,17 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(() => {
-    // your code here
-})();
+document.getElementById("run").addEventListener("click",() => {
+    let pass = document.getElementById("pass-one");
+    let confirm = document.getElementById("pass-two");
+    /* declarer variable pour input */
+    if(pass.value!=confirm.value){
+        pass.style.border= "2px dashed red";
+        confirm.style.border="2px dashed red"
+    }
+    else{
+        pass.style.border= "2px dotted lightblue";
+        confirm.style.border="2px dotted lightblue";
+    }
+
+});
