@@ -1,73 +1,139 @@
 let selectElementsStartingWithA = (array) => {
-    return 'Write your method here';
+    return array.filter(element => element[0] === 'a')
+    // filtre le tableau et renvoit l'element si la premiere lettre est === à A
 }
 
 let selectElementsStartingWithVowel = (array) => {
-    return 'Write your method here';
+    return array.filter(element => element[0] === 'a' || element[0] === 'e' || element [0] ==='i' || element [0] ==='o' || element [0] ==='u'|| element [0] ==='y')
+    // filtre le tableau et check les element, pour la premiere valeur de l'element check si c'est A ou e ou ...
+
 }
 
 let removeNullElements = (array) => {
-    return 'Write your method here';
+    
+    return array.filter(element => element != null);
+    // renvoit le tableau filtré de tout les null , renvoit tout les element different de null
 }
 
 let removeNullAndFalseElements = (array) => {
-    return 'Write your method here';
+    return array.filter(element => element !== null && element !== false);
+    
 }
 
 let reverseWordsInArray = (array) => {
-    return 'Write your method here';
-}
+ for (let i = 0; i < array.length; i++) {
+     array[i] = array[i].split('').reverse().join('');
+ }
+    return array
+};
+
+ 
 
 let everyPossiblePair = (array) => {
-    return 'Write your method here';
+ let newArr=[];
+ newArr.push([array[2], array[0]]);
+ newArr.push([array[2], array[1]]);
+ newArr.push([array[0], array[1]]);
+ return newArr
+
 }
 
 let allElementsExceptFirstThree = (array) => {
-    return 'Write your method here';
+    
+    return array.splice(3, array.length - 3)
 }
 
 let addElementToBeginning = (array, element) => {
-    return 'Write your method here';
+    array.splice(0, 0, element);//array.unshift(element)
+    // tableau.splice (où on le met, 0 supprime rien 1 supprime la position 0, ce qu'on veut add)
+    return array
 }
 
 let sortByLastLetter = (array) => {
-    return 'Write your method here';
+    return array.map( element => element.split('').reverse().join('')).sort().map(element=> element.split('').reverse().join(''))
 }
 
 let getFirstHalf = (string) => {
-    return 'Write your method here';
+    return string.substr(0,Math.ceil(string.length/2));
 }
 
 let makeNegative = (number) => {
-    return 'Write your method here';
+    return -Math.abs(number)
 }
 
 let numberOfPalindromes = (array) => {
-    return 'Write your method here';
+    let arr = [];
+    //creer nnew tableau pour push dedans les palin 
+
+    array.forEach(element => {
+        // pour chaque du tableau - element stock ds palin le mot split puis revers epuis join
+        let palin = element.split('').reverse().join('');
+    if (element == palin) {
+        // si l'element est egal a la variable alors push l'element ds le tableau vide
+        arr.push(element)
+    }
+
+    });
+    return arr.length
+    // return array.filter(element => element.split('').reverse().join('').length)
 }
 
 let shortestWord = (array) => {
-    return 'Write your method here';
+
+    let mot = "ejjeejejjejeje";
+    // variable qui stock mot long
+    for ( let i = 0; i < array.length; i++) {
+        // parcours le tableau et si la longueur de l'element de l'array est plus petit
+        
+        // que le mot long alors le mot est remplacé par le mot long
+        if(array[i].length < mot.length){
+            mot=array[i] 
+        }
+    }
+    return mot
 }
 
 let longestWord = (array) => {
-    return 'Write your method here';
+    let mot ="h";
+    for (let i = 0; i < array.length; i++) {
+        if(array[i].length > mot.length){
+            mot = array[i]
+        }
+        
+    }
+    return mot
 }
 
 let sumNumbers = (array) => {
-    return 'Write your method here';
+    let num = array.reduce((a,b) => a+b, 0)
+    return num;
+    // return array.reduce((a,b) => a+b,0)
 }
 
 let repeatElements = (array) => {
-    return 'Write your method here';
+
+   return [array, array].flat();
+   // flat enleve bracket interne de deux tableaux mit ds un tableau
+//    let arr=[]
+//     for(i=0;i<2;i++){
+//         for(el in array){
+//             arr.push(array[el])
+//         }
+//     }
 }
 
 let stringToNumber = (string) => {
-    return 'Write your method here';
+    return +(string)
 }
 
 let calculateAverage = (array) => {
-    return 'Write your method here';
+    let total = 0;
+        for(let i = 0; i < array.length; i++) {
+        total += array[i];
+    }
+    let moyenne = total / array.length;
+    return moyenne
+    
 }
 
 let getElementsUntilGreaterThanFive = (array) => {

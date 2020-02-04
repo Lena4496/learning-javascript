@@ -21,7 +21,7 @@ click, ctextmenu, dblclick, mousedown, mouseenter, mouseleave, mousemove, mouseo
 ### Exercices 3
 
 - Crée (en HTML) 2 `DIV` avec une id chacune 'axe-x' et 'axe-y'
-- Faire en sorte que lorsque l'on bouge la souris dans la *fenêtre*, la position sois affiché dans les divs associés
+- Faire en sorte que lorsque l'on bouge la souris dans la *fenêtre*, la position soit affiché dans les divs associés
 
 > Tip : Utiliser l'evenement reçu en argument
 > Tip : Utiliser `innerHTML` ou `innerText`

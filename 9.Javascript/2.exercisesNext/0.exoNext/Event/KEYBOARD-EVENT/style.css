@@ -1,0 +1,18 @@
+.highlight{
+    opacity: 0.4;
+    
+
+}
+
+#character{
+    padding: 50px;
+    font-size: large;
+    font-weight: 600;
+}
+
+body{
+    background-color: navajowhite;
+    padding: 50px;
+    font-size: large;
+    font-weight: 600;
+}
