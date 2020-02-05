@@ -160,6 +160,7 @@ describe('javascript-Recall', () => {
     it('formats a date nicely', () => {
         let result = formatDateNicely(new Date('2015-03-04'));
         expect(result).toEqual('04/03/2015');
+        
     });
 
     it('gets the domain name from an email address', () => {

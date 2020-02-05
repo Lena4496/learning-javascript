@@ -137,65 +137,116 @@ let calculateAverage = (array) => {
 }
 
 let getElementsUntilGreaterThanFive = (array) => {
-    return 'Write your method here';
+    let arr=[];
+    for (let i = 0; i < 6; i++) {
+        arr.push(array[i])
+    }
+    return arr
+     // splice()
 }
 
 let convertArrayToObject = (array) => {
-    return 'Write your method here';
+ let obj = {};
+ for (let i = 0; i < array.length; i++) {
+     obj[array[i]] = array[i+1];
+     i++;
+ }
+ return obj
 }
 
 let getAllLetters = (array) => {
-    return 'Write your method here';
+    
+    let string = array.toString();
+    let splitt = string.split('')
+    let filtre = splitt.filter(item => item !== ',')
+    let sorted = filtre.sort()
+    let vor = sorted.filter((item, index) => sorted.indexOf(item) === index)
+    
+    return vor;
 }
 
 let swapKeysAndValues = (object) => {
-    return 'Write your method here';
+    let newObj = {};
+    for (let prop in object) {
+        newObj[object[prop]]= prop;
+    
+    }
+    return newObj;
 }
 
 let sumKeysAndValues = (object) => {
-    return 'Write your method here';
+    let obj = Object.entries(object).join(",").split(',').reduce((a,b) => Number(a) + Number(b));
+    return obj
+   
+    
 }
 
 let removeCapitals = (string) => {
-    return 'Write your method here';
+    return string.replace(/([A-Z])/g,'' );
 }
 
 let roundUp = (number) => {
-    return 'Write your method here';
+    return Math.ceil(number)
 }
 
 let formatDateNicely = (date) => {
-    return 'Write your method here';
+   
+
+    return date.toLocaleDateString();
 }
 
 let getDomainName = (string) => {
-    return 'Write your method here';
+    let domain = string.substring(string.lastIndexOf("@") +1).replace('.com', '')
+
+    return domain
 }
 
 let titleize = (string) => {
-    return 'Write your method here';
+    return string[0].toUpperCase()+(string.replace(/(?<=\bthe\s)(\w+)|(?<=\b.\s)(\w+)/g, (word)=>{return word[0].toUpperCase()+word.slice(1)})).slice(1);
 }
 
 let checkForSpecialCharacters = (string) => {
-    return 'Write your method here';
+    return !!string.match(/[_\W]/g)
 }
 
 let squareRoot = (number) => {
-    return 'Write your method here';
+    return Math.sqrt(number)
 }
 
 let factorial = (number) => {
-    return 'Write your method here';
+        if(number==0) {
+           return 1;
+        }
+        return number * factorial(number-1);
+
+     
+     function run(x) {
+         return factorial(+(x, 10));
+     }
 }
 
 let findAnagrams = (string) => {
-    return 'Write your method here';
+    let anagrams = [];
+    const genAnagrams = (word, anagram = '') => {
+          if (!word) {
+                anagrams.push(anagram);
+          }
+          for(let i=0; i<word.length; i++) {
+                anagram += word[i];
+                genAnagrams(word.slice(0, i) + word.slice(i+1), anagram);
+                anagram = anagram.slice(0, anagram.length -1);
+          }
+    }
+    genAnagrams(string, anagram = '');
+    return anagrams;
 }
 
 let convertToCelsius = (number) => {
-    return 'Write your method here';
+    return Math.round((number -32) * (5/9))
+    // calcul pour la conversion  X -32  * 5/9
 }
 
 let letterPosition = (array) => {
-    return 'Write your method here';
+    let nub= array.map(element => element.toLowerCase().charCodeAt(0) - 96);
+    return nub;
 }
