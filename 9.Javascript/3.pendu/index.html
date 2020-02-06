@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Pendu</title>
+</head>
+<body>
+    <section class="container">
+        <h1 class="text-center">Jeu du Pendu</h1>
+        <article class="float-right">Mal deviné: <span id="mistakes">0</span> of <span id="maxWrong"></span></article>
+        <article class="text-center">
+            <img id="hangmanPic" src="0.jpg" alt="">
+            <p>Devine le mot!</p>
+            <p id="wordSpotlight">Le mot à decouvrir est ici...</p>
+            <article id="keyboard"></article>
+            <button class="btn btn-info " onClick="reset()">Réinitialiser</button>
+        </article>
+    </section>
+<script src="main.js"></script>
+</body>
+</html>
